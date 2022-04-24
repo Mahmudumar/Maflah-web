@@ -21,6 +21,7 @@
 
     ],
     "start_url": ".",
+    "id": "/",
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "#111111",

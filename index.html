@@ -18,18 +18,17 @@
 
 <body>
     <header>
-        <div class="title">
+        <span class="title">
             <img src="./logo_192.png" alt="logo" width="40px">
             <h3 class="titletext">Maflah</h3>
-        </div>
+        </span>
 
-        <div class="navbar" id="navbar">`
-            <nav>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-            </nav>
-        </div>
+        <nav class="navbar" id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+        </nav>
+
         <!--
         <div class="searchbar" id="searchbar" name="searchbar">
             <svg id="searchbt" width="16px" height="16px">
@@ -42,13 +41,23 @@
             <input type="search" name="searchinput" id="searchinput" role="searchbox" placeholder="Search">
         </div>
         -->
-        <div class="join" id="link">
-            <a class="signup" href="# ">Sign Up</a>
+        <span class="right-nav">
+            <div class="join" id="link">
+            <span class="login" href="# ">Login</span>
         </div>
+        <div class="join" id="link">
+            <span class="signup" href="# ">Sign Up</span>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </span>
     </header>
 
     <main class="main">
-
         <!--<div class="introtext" id="text">
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur quos dolor itaque architecto mollitia praesentium rerum illum corrupti esse.
@@ -58,9 +67,9 @@
         <div class="introimg" id="imgcontainer">
             <img src="/imgs/maflahstudio1.png" alt="maflahstudio" width="500px">
         </div>-->
-        <div class="shoparea">
-            <div>hi</div>
-        </div>
+        <section class="shop">
+            <object data="www.paystack.com/maflah" type=""></object>
+        </section>
     </main>
 
 </body>

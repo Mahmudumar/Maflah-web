@@ -1,0 +1,127 @@
+* {
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*style all "a" links*/
+
+a {
+    text-decoration: none;
+}
+
+
+/**/
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #222222;
+    display: flex;
+    height: fit-content;
+    padding: 0px;
+    width: 100%;
+}
+
+
+/*title*/
+
+.title {
+    /*Helpful when you just want to display contents of the div*/
+    display: flex;
+}
+
+.title img {
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.title .titletext {
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    padding: 5px;
+    color: #efefef;
+    /*font of title*/
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar nav li a {
+    color: #dfdfdf;
+    font-size: 15px;
+}
+
+
+/*Searchbox element style*/
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.searchbar #searchinput {
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #5f5f5f;
+    margin-left: 5px;
+}
+
+#searchinput:focus {
+    outline: none;
+}
+
+
+/**/
+
+
+/*signup bt*/
+
+.signup {
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 2px;
+    outline: 1px solid;
+    color: #afafaf;
+    margin-left: 30px;
+}
+
+
+/*body*/
+
+body {
+    background-color: #f2f2f2;
+}
+
+.intro {
+    display: flex;
+    margin: 20px;
+}
+
+.intro #text {
+    display: flex;
+    width: 50%;
+}

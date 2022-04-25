@@ -7,6 +7,7 @@ function getsearchinput() {
 
 search_input.addEventListener('keyup', getsearchinput)
 console.log(search_input) **/
-function print_(thing){
+function print_(thing) {
     console.log(thing)
 }
+body_ = document.querySelector('body')

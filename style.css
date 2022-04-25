@@ -15,10 +15,11 @@ body {
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
+    background-image: linear-gradient( #499696, #f2f2f2);
 }
 
 header {
-    background-color: #efefef;
+    background-color: transparent;
     display: flex;
     height: 90px;
     padding: 0px;
@@ -32,7 +33,6 @@ main {
     height: 85vh;
     justify-content: center;
     align-items: center;
-    background-image: url('imgs\yellow1.jpg');
 }
 
 section {
@@ -44,6 +44,7 @@ section {
     justify-content: space-between;
     align-items: center;
     font-family: serif;
+    text-align: center;
 }
 
 .small {
@@ -91,7 +92,16 @@ section {
 
 @media screen and (max-width:469px) {
     body {
-        overflow-x: hidden;
+        overflow-x: hidden clip;
+    }
+    header {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        background-color: blue;
+    }
+    main {
+        height: 1000px;
     }
     .title .titletext {
         display: flex;
@@ -136,11 +146,6 @@ section {
     .login {
         font-size: 12px;
         color: #afafaf;
-    }
-    iframe {
-        display: flexbox;
-        width: 467px;
-        height: 1200px
     }
 }
 

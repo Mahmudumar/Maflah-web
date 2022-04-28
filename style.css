@@ -39,21 +39,12 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 150px;
+    height: 100%;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
     font-family: serif;
     text-align: center;
-}
-
-.small {
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-.big {
-    font-size: 90px;
 }
 
 .burger div {
@@ -98,10 +89,8 @@ section {
         position: fixed;
         left: 0%;
         top: 0%;
-        background-color: blue;
-    }
-    main {
-        height: 1000px;
+        width: 100%;
+        background-color: transparent;
     }
     .title .titletext {
         display: flex;
@@ -112,6 +101,9 @@ section {
         /*font of title*/
         font-size: 19px;
         font-family: sans-serif;
+    }
+    .burger div {
+        background-color: #afafaf;
     }
     .burger {
         display: block;

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generator: Blender, SVG Export for Grease Pencil - v1.0 -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.0" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" width="514px" height="257px" viewBox="0 0 514 257">
+<svg version="1.0" x="207px" y="0px" xmlns="http://www.w3.org/2000/svg" width="514px" height="514px" viewBox="0 0 514 514">
 	<g id="blender_frame_1">
 		<g id="blender_object_Stroke">
 			<!--Layer: GP_Layer-->
@@ -10,15 +9,10 @@
 				<polygon fill="#4CBF6F" stroke="none" fill-opacity="1" points="54.382019,232.882355 119.699829,165.991547 434.192810,168.874023 504.851074,240.086517 495.351440,247.932312 426.268555,177.725128 127.633820,174.416687 62.332520,240.972687" />
 				<polygon fill="#4CBF6F" stroke="none" fill-opacity="1" points="188.240295,60.235382 195.865967,54.493866" />
 				<polygon fill="#4CBF6F" stroke="none" fill-opacity="1" points="195.929443,54.524902 257.808533,117.498749 292.783142,83.261230 299.716492,89.817291 296.584290,93.404297 351.828247,149.918518 395.981873,149.809723 263.361877,17.173035 270.377319,10.000000 418.018738,156.843567 344.560364,156.930237 288.783508,100.650116 257.381714,132.313477 226.913086,100.221252 172.287781,157.855957 165.349487,150.797943 220.071472,92.954224 199.782776,71.700104 49.997437,229.413757 10.000000,188.117981 16.668945,181.025452 49.909210,215.500122 192.508850,64.809540 188.240295,60.235382" />
+				
 			</g>
 			
 		</g>
 	</g>
-	<defs>
-	<linearGradient x1="20" y1="10" x2="200" y2="400">
-	<stop stop-color="#3d44fc"/>
-	<stop offset="0.1" stop-color="#3344fc"/>
-	<stop offset="1" stop-color="#3344fc"/>
-	</linearGradient>
-	</defs>
+	
 </svg>

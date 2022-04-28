@@ -7,7 +7,17 @@ function getsearchinput() {
 
 search_input.addEventListener('keyup', getsearchinput)
 console.log(search_input) **/
-function print_(thing) {
-    console.log(thing)
+
+
+//get elements
+main_ = document.getElementsByClassName('main')
+main = main_[0]
+
+//get window size at all times
+function onWinResize() {
+    main.setAttribute("width", window.innerWidth)
+    main.setAttribute("height", window.innerHeight)
+
+    console.log(main.getAttribute('height'));
 }
-body_ = document.querySelector('body')
+window.addEventListener('resize', onWinResize)

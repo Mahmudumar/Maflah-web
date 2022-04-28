@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
-    background-image: linear-gradient( #499696, #f2f2f2);
+    background-image: linear-gradient( #f2f2f2, #44AD39);
 }
 
 header {

@@ -10,14 +10,12 @@ console.log(search_input) **/
 
 
 //get elements
-main_ = document.getElementsByClassName('main')
-main = main_[0]
+function setMinHeight() {
+    const header = document.querySelector('header').clientHeight;
+    const main = document.querySelector('body');
+    main.style.setProperty('--nav-height', `${header}px`)
 
-//get window size at all times
-function onWinResize() {
-    main.setAttribute("width", window.innerWidth)
-    main.setAttribute("height", window.innerHeight)
 
-    console.log(main.getAttribute('height'));
 }
-window.addEventListener('resize', onWinResize)
+window.addEventListener('load', setMinHeight)
+window.addEventListener('resize', setMinHeight)

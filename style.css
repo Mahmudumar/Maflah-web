@@ -11,6 +11,7 @@
 /*style all "a" links*/
 
 body {
+    --nav-height: 10px;
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,24 +28,29 @@ header {
     justify-content: space-around;
 }
 
-main {
-    display: flex;
-    width: 100%;
-    height: 85vh;
-    justify-content: center;
-    align-items: center;
+.main {
+    min-height: calc(100vh - (var(--nav-height)));
 }
 
 section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 250px;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
     font-family: serif;
     text-align: center;
+}
+
+.small {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.big {
+    font-size: 90px;
 }
 
 .burger div {
@@ -79,130 +85,77 @@ section {
 }
 
 
-/*mobile*/
+/*desktop and tablet*/
 
-@media screen and (max-width:469px) {
-    body {
-        overflow-x: hidden clip;
-    }
-    header {
-        position: fixed;
-        left: 0%;
-        top: 0%;
-        width: 100%;
-        background-color: transparent;
-    }
-    .title .titletext {
-        display: flex;
-        width: fit-content;
-        height: 40px;
-        padding: 5px;
-        color: #efefef;
-        /*font of title*/
-        font-size: 19px;
-        font-family: sans-serif;
-    }
-    .burger div {
-        background-color: #afafaf;
-    }
-    .burger {
-        display: block;
-        pointer-events: all;
-    }
-    .navbar {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        right: 0px;
-        top: 0%;
-        height: 300px;
-        width: 50%;
-        background-color: #444444;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-        list-style: none;
-        transform: translateX(100%);
-    }
-    .navbar a {
-        color: #afafaf;
-        font-size: 15px;
-    }
-    .signup {
-        font-size: 12px;
-        padding: 4px;
-        color: #afafaf;
-        border-radius: 5px;
-        outline: 1px solid;
-    }
-    .login {
-        font-size: 12px;
-        color: #afafaf;
-    }
+.title .titletext {
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    padding: 5px;
+    color: #202020;
+    /*font of title*/
+    font-size: 35px;
+    font-family: serif;
+}
+
+.navbar {
+    display: flex;
+    background-color: transparent;
+    display: flex;
+    background-color: transparent;
+    width: 50%;
+    margin: 0px 50px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar a {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-/*desktop and tablet*/
+/*Searchbox element style*/
 
-@media screen and (min-width:470px) {
-    /*title*/
-    .title .titletext {
-        display: flex;
-        width: fit-content;
-        height: 40px;
-        padding: 5px;
-        color: #202020;
-        /*font of title*/
-        font-size: 35px;
-        font-family: serif;
-    }
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.searchbar #searchinput {
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #5f5f5f;
+    margin-left: 5px;
+}
+
+#searchinput:focus {
+    outline: none;
+}
+
+.signup {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 1px solid;
+    color: #2e2e2e;
+    margin-left: 30px;
+}
+
+.login {
+    font-size: 12px;
+    color: #2e2e2e;
+}
+
+@media (max-width: 500px) {
     .navbar {
-        display: flex;
-        background-color: transparent;
-        display: flex;
-        background-color: transparent;
-        width: 50%;
-        margin: 0px 50px;
-        justify-content: space-around;
-        list-style: none;
+        background-color: #f2f2f2;
     }
-    .navbar a {
-        color: #2e2e2e;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-    }
-    /*Searchbox element style*/
-    .searchbar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: azure;
-        padding: 2px;
-        border-radius: 5px;
-    }
-    .searchbar #searchinput {
-        height: 20px;
-        background-color: transparent;
-        border: none;
-        font-size: 14px;
-        color: #5f5f5f;
-        margin-left: 5px;
-    }
-    #searchinput:focus {
-        outline: none;
-    }
-    .signup {
-        font-size: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        outline: 1px solid;
-        color: #afafaf;
-        margin-left: 30px;
-    }
-    .login {
-        font-size: 12px;
-        color: #afafaf;
-    }
-    /**/
-    /*signup bt*/
 }

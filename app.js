@@ -13,7 +13,7 @@ console.log(search_input) **/
 function setMinHeight() {
     const header = document.querySelector('header').clientHeight;
     const main = document.querySelector('body');
-    main.style.setProperty('--nav-height', `${header}px`)
+    main.style.setProperty('--nav-height', `${header}px`);
 }
-window.addEventListener('load', setMinHeight)
-window.addEventListener('resize', setMinHeight)
+window.addEventListener('load', setMinHeight);
+window.addEventListener('resize', setMinHeight);

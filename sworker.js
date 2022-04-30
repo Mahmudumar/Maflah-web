@@ -9,12 +9,13 @@ self.addEventListener("install", (event) => {
             "/Maflah-web/",
             "/Maflah-web/index.html",
             "/Maflah-web/style.css",
-            "/Maflah-web/app.js",
-            "/Maflah-web/image-list.js",
-            "/Maflah-web/star-wars-logo.jpg",
-            "/Maflah-web/gallery/bountyHunters.jpg",
-            "/Maflah-web/gallery/myLittleVader.jpg",
-            "/Maflah-web/gallery/snowTroopers.jpg",
+            "/Maflah-web/app.js"
         ])
+    );
+});
+
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        window.alert(event)
     );
 });

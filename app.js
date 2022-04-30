@@ -26,8 +26,8 @@ const registerServiceWorker = async() => {
     if ('serviceWorker' in navigator) {
         try {
             const registration = await navigator.serviceWorker.register(
-                '/sworker.js', {
-                    scope: '/',
+                'Maflah-web/sworker.js', {
+                    scope: '/Maflah-web/',
                 }
             );
             if (registration.installing) {

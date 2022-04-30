@@ -5,17 +5,18 @@
     "icons": [{
             "src": "favicon.svg",
             "sizes": "514x514",
-            "type": "logo"
+            "type": "image/svg+xml"
         }, {
             "src": "logo_512.png",
             "sizes": "512x512",
-            "type": "png"
+            "type": "image/png",
+            "purpose": "any"
 
         },
         {
             "src": "logo_192.png",
             "sizes": "192x192",
-            "type": "png"
+            "type": "image/png"
 
         }
 
@@ -24,6 +25,6 @@
     "id": "/",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#111111",
-    "background_color": "#111111"
+    "theme_color": "#f2f2f2",
+    "background_color": "#f2f2f2"
 }

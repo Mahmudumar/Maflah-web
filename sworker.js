@@ -15,7 +15,8 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    window.alert(event)
     event.respondWith(
-        window.alert(event)
+        caches.match(event.request)
     );
 });

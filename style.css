@@ -16,7 +16,6 @@ body {
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
-    background-image: linear-gradient( #f2f2f2, #44AD39);
 }
 
 header {
@@ -28,22 +27,24 @@ header {
     justify-content: space-around;
 }
 
-.main {
-    min-height: calc(100vh - (var(--nav-height)));
+.title {
     display: flex;
-    justify-content: center;
 }
 
-section {
+.title img {
+    border-radius: 20px;
+    margin: 0px 20px 0px 0px;
+}
+
+.title .titletext {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
+    width: fit-content;
+    height: 40px;
+    padding: 5px;
+    color: #202020;
+    /*font of title*/
+    font-size: 35px;
     font-family: serif;
-    text-align: center;
 }
 
 .small {
@@ -53,6 +54,31 @@ section {
 
 .big {
     font-size: 90px;
+}
+
+.navbar {
+    display: flex;
+    background-color: transparent;
+    display: flex;
+    background-color: transparent;
+    width: 40%;
+    margin: 0px 30px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar a {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.right-nav * {
+    margin: 0px 6px;
 }
 
 .burger {
@@ -66,55 +92,6 @@ section {
     background-color: #2e2e2e;
     margin: 5px;
     border-radius: 2px;
-}
-
-.right-nav {
-    display: flex;
-}
-
-.right-nav * {
-    margin: 0px 6px;
-}
-
-.title {
-    /*Helpful when you just want to display contents of the div*/
-    display: flex;
-}
-
-.title img {
-    border-radius: 20px;
-    margin-right: 20px;
-}
-
-
-/*desktop and tablet*/
-
-.title .titletext {
-    display: flex;
-    width: fit-content;
-    height: 40px;
-    padding: 5px;
-    color: #202020;
-    /*font of title*/
-    font-size: 35px;
-    font-family: serif;
-}
-
-.navbar {
-    display: flex;
-    background-color: transparent;
-    display: flex;
-    background-color: transparent;
-    width: 50%;
-    margin: 0px 50px;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.navbar a {
-    color: #2e2e2e;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -146,8 +123,7 @@ section {
     font-size: 15px;
     padding: 10px;
     border-radius: 5px;
-    outline: 1px solid;
-    color: #2e2e2e;
+    color: #f2f2f2;
     margin-left: 30px;
     cursor: pointer;
 }
@@ -157,6 +133,58 @@ section {
     color: #2e2e2e;
     cursor: pointer;
 }
+
+.main {
+    min-height: calc(100vh - (var(--nav-height)));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient( #f2f2f2, #44AD39);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        --nav-height: 10px;
+        overflow: hidden;
+    }
+    .main {
+        min-height: calc(100vh - (var(--nav-height)));
+    }
+    .navbar a {
+        font-size: 17px;
+    }
+    .navbar {
+        margin: 0px 0px;
+    }
+    .title .titletext {
+        font-size: 25px;
+    }
+    .title img {
+        margin: 0px 0px 0px 20px;
+    }
+    .right-nav * {
+        margin: 0px 3px;
+        font-size: 12px;
+    }
+    .signup {
+        padding: 7px;
+    }
+}
+
+
+/*mobile 500px and below*/
 
 @media screen and (max-width: 500px) {
     body {
@@ -184,11 +212,38 @@ section {
         cursor: pointer;
     }
     .big {
-        font-size: 40px;
+        font-size: 50px;
     }
     .signup {
         font-size: 10px;
         padding: 5px;
         margin-left: 0;
+    }
+    .right-nav {
+        width: 40%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        --nav-height: 10px;
+        overflow: hidden;
+    }
+    .main {
+        min-height: calc(100vh - (var(--nav-height)));
+    }
+    .title img {
+        margin: 0px 0px;
+    }
+    .signup {
+        padding: 2px;
+        margin: 0px;
+    }
+    .title .titletext {
+        font-size: 10px;
+    }
+    .right-nav {
+        width: 50%;
     }
 }

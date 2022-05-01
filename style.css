@@ -161,7 +161,7 @@ section {
 @media screen and (max-width: 600px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden;
+        overflow-x: hidden clip;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -193,8 +193,7 @@ section {
 @media screen and (max-width: 500px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden;
-        max-width: 100%;
+        overflow-x: hidden clip;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -243,7 +242,7 @@ section {
 @media screen and (max-width: 300px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden;
+        overflow-x: hidden clip;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));

@@ -9,19 +9,10 @@ search_input.addEventListener('keyup', getsearchinput)
 console.log(search_input) **/
 
 
+
 //get elements
-function setMinHeight() {
-    const header = document.querySelector('header').clientHeight;
-    const main = document.querySelector('body');
-    main.style.setProperty('--nav-height', `${header}px`);
-}
-window.addEventListener('load', setMinHeight);
-window.addEventListener('resize', setMinHeight);
 
-const burger = document.querySelector('.burger')
-console.log(burger);
-
-
+/*
 const registerServiceWorker = async() => {
     if ('serviceWorker' in navigator) {
         try {
@@ -45,4 +36,43 @@ const registerServiceWorker = async() => {
 
 // ...
 
-registerServiceWorker();
+registerServiceWorker();*/
+
+function setMinHeight() {
+    const header = document.querySelector('header').clientHeight;
+    const main = document.querySelector('body');
+    main.style.setProperty('--nav-height', `${header}px`);
+}
+window.addEventListener('load', setMinHeight);
+window.addEventListener('resize', setMinHeight);
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const navs = document.querySelector('.navbar');
+    const navlis = document.querySelectorAll('.navbar li');
+    //toggle nav
+    burger.addEventListener('click', () => {
+        navs.classList.toggle('nav-active');
+
+        navlis.forEach((link, index) => {
+            // basically if the link in 
+            //the navbar has an animation already just use it
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navlisfadein 0.5s ease forwards ${index/7+0.1}s`
+            }
+        });
+        burger.classList.toggle('toggle')
+    });
+    // animate fade
+
+}
+
+
+
+// app functions all together
+const app = () => {
+    navSlide()
+}
+app()

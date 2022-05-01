@@ -11,6 +11,7 @@
 /*style all "a" links*/
 
 body {
+    overflow-x: hidden;
     --nav-height: 10px;
     display: flex;
     flex-direction: column;
@@ -84,15 +85,15 @@ header {
 
 .burger {
     display: none;
-    pointer-events: none;
 }
 
 .burger div {
-    width: 15px;
-    height: 1px;
+    width: 17px;
+    height: 2px;
     background-color: #2e2e2e;
-    margin: 5px;
+    margin: 4px;
     border-radius: 2px;
+    transition: all 0.2s ease;
 }
 
 
@@ -159,7 +160,7 @@ section {
 @media screen and (max-width: 600px) {
     body {
         --nav-height: 10px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -191,7 +192,7 @@ section {
 @media screen and (max-width: 500px) {
     body {
         --nav-height: 10px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -200,18 +201,28 @@ section {
         position: absolute;
         top: 90px;
         right: 0%;
-        background-color: #f2f2f2;
+        background-color: #44AD39;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 400px;
-        width: 60%;
+        width: 50%;
         margin: 0px;
         transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    .navbar li {
+        opacity: 0%;
+    }
+    .navbar a {
+        color: #f2f2f2;
+        font-weight: 200;
+        font-size: 20px;
     }
     .burger {
         display: block;
         cursor: pointer;
+        pointer-events: all;
     }
     .big {
         font-size: 50px;
@@ -230,7 +241,7 @@ section {
 @media screen and (max-width: 300px) {
     body {
         --nav-height: 10px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -247,5 +258,41 @@ section {
     }
     .right-nav {
         width: 50%;
+    }
+}
+
+
+/*for toggling nav bar visibilty*/
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+/*for burger menu folding*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-3px, -2.5px);
+}
+
+
+/*animations*/
+
+@keyframes navlisfadein {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }

@@ -1,7 +1,8 @@
-const addResourcesToCache = async(resources) => {
+/*const addResourcesToCache = async(resources) => {
     const cache = await caches.open("v1");
     await cache.addAll(resources);
 };
+
 
 self.addEventListener("install", (event) => {
     event.waitUntil(
@@ -19,4 +20,4 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
     );
-});
+});*/

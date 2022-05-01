@@ -194,6 +194,7 @@ section {
     body {
         --nav-height: 10px;
         overflow-x: hidden;
+        max-width: 100%;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));

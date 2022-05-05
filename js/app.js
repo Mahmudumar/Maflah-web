@@ -8,8 +8,6 @@ function getsearchinput() {
 search_input.addEventListener('keyup', getsearchinput)
 console.log(search_input) **/
 
-
-
 //get elements
 
 /*
@@ -37,16 +35,17 @@ const registerServiceWorker = async() => {
 // ...
 
 registerServiceWorker();*/
+const header = document.querySelector('header');
 
 function setMinHeight() {
-    const header = document.querySelector('header').clientHeight;
+    const headerHeight = header.clientHeight
     const main = document.querySelector('body');
-    main.style.setProperty('--nav-height', `${header}px`);
+    main.style.setProperty('--nav-height', `${headerHeight}px`);
 }
 window.addEventListener('load', setMinHeight);
 window.addEventListener('resize', setMinHeight);
 
-const navSlide = () => {
+const enableNavSlide = (delay) => {
     const burger = document.querySelector('.burger');
     const navs = document.querySelector('.navbar');
     const navlis = document.querySelectorAll('.navbar li');
@@ -60,7 +59,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navlisfadein 0.5s ease forwards ${index/7+0.5}s`
+                link.style.animation = `navlisfadein 0.5s ease forwards ${index/delay+.09}s`
             }
         });
         burger.classList.toggle('toggle')
@@ -69,10 +68,40 @@ const navSlide = () => {
 
 }
 
+const navs = document.querySelector('.navbar');
+const body = document.querySelector('body')
+const sizeBody = () => {
+    body.setAttribute('width', `${window.innerWidth-navs.clientWidth}px`)
+    body.setAttribute('height', `${window.innerHeight}px`)
+}
+window.addEventListener('load', sizeBody)
+window.addEventListener('resize', sizeBody)
 
+
+
+
+
+function Scrolling() {
+    //as soon as i start scrolling down, header should go up
+    const yScroll = window.scrollY
+    const scrHeight = document.querySelector('main').scrollHeight
+    console.log(scrHeight - yScroll);
+    if (yScroll >= (scrHeight - yScroll)) {
+        header.style.transform = 'translateY(-100%)'
+        header.style.transition = 'transform 0.5s ease'
+    } else {
+        header.style.transform = ''
+    }
+
+}
+
+
+window.addEventListener('scroll', Scrolling)
+window.addEventListener('load', Scrolling)
 
 // app functions all together
 const app = () => {
-    navSlide()
+    enableNavSlide(10)
+
 }
 app()

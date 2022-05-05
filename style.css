@@ -5,28 +5,40 @@
     margin: 0%;
     padding: 0%;
     text-decoration: none;
+    background-color: transparent;
 }
 
-
-/*style all "a" links*/
-
 body {
-    overflow-x: hidden;
     --nav-height: 10px;
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     display: flex;
     height: 90px;
     padding: 0px;
     width: 100%;
     justify-content: space-around;
     background-color: #f2f2f2;
+    z-index: 1;
+}
+
+main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: fit-content;
+    background-color: transparent;
+    background-clip: border-box;
 }
 
 .title {
@@ -50,20 +62,10 @@ header {
     font-family: serif;
 }
 
-.small {
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-.big {
-    font-size: 90px;
-}
-
 .navbar {
     display: flex;
     background-color: transparent;
     display: flex;
-    background-color: transparent;
     width: 40%;
     margin: 0px 30px;
     justify-content: space-around;
@@ -98,7 +100,7 @@ header {
 }
 
 
-/*Searchbox element style*/
+/*Searchbox element style
 
 .searchbar {
     display: flex;
@@ -121,6 +123,7 @@ header {
 #searchinput:focus {
     outline: none;
 }
+*/
 
 .signup {
     font-size: 15px;
@@ -137,31 +140,183 @@ header {
     cursor: pointer;
 }
 
-.main {
-    min-height: calc(100vh - (var(--nav-height)));
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #f2f2f2;
-    background-clip: border-box;
+
+/*(HEADER's NAVBAR) for toggling nav bar visibilty*/
+
+.nav-active {
+    transform: translateX(0%);
 }
+
+
+/*for burger menu folding*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-3px, -2.5px);
+}
+
+
+/*animations*/
+
+@keyframes navlisfadein {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes logofadein {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes textappear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ballexplode {
+    0% {
+        opacity: 0;
+        transform: scale(100%, 100%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(400%, 400%);
+    }
+}
+
+
+/*Every section must take up the whole width*/
 
 section {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: auto;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    font-family: serif;
-    text-align: center;
+    height: 100vh;
+    background-color: #f2f2f2;
 }
+
+section h2 {
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+
+/*individual sections*/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.home .homedescrip {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home .homeimg img {
+    width: 300px;
+    animation: logofadein .7s forwards;
+    border-radius: 100%;
+}
+
+.home .hometxt {
+    font-size: 30px;
+    text-align: left;
+    animation: textappear 0.5s ease;
+}
+
+.hometxt p {
+    color: #202020;
+    margin: 25px 0px;
+    max-width: 600px;
+    line-height: 36pt;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.products .prodscrollable {
+    display: flex;
+    overflow-x: auto;
+}
+
+.products .prodscrollable div {
+    padding: 10px;
+    margin: 10px;
+}
+
+.products div img {
+    height: 350px;
+    border-radius: 10%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .aboutdescrip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about .aboutimg img {
+    width: 400px;
+    animation: logofadein .7s forwards;
+}
+
+.about .abouttxt {
+    font-size: 30px;
+    text-align: left;
+    animation: textappear 0.5s ease;
+}
+
+.abouttxt p {
+    color: #202020;
+    margin: 25px 0px;
+    max-width: 600px;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+
+/**/
 
 @media screen and (max-width: 600px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden clip;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -193,11 +348,21 @@ section {
 @media screen and (max-width: 500px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden clip;
     }
     .main {
-        min-height: calc(100vh - (var(--nav-height)));
+        position: absolute;
+        top: 90px;
+        left: 0%;
     }
+    header {
+        z-index: 1;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+    }
+    /*.main {
+min-height: calc(100vh - (var(--nav-height)));
+}*/
     .navbar {
         position: absolute;
         top: 90px;
@@ -242,7 +407,6 @@ section {
 @media screen and (max-width: 300px) {
     body {
         --nav-height: 10px;
-        overflow-x: hidden clip;
     }
     .main {
         min-height: calc(100vh - (var(--nav-height)));
@@ -259,41 +423,5 @@ section {
     }
     .right-nav {
         width: 50%;
-    }
-}
-
-
-/*for toggling nav bar visibilty*/
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-
-/*for burger menu folding*/
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-6px, 5px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-3px, -2.5px);
-}
-
-
-/*animations*/
-
-@keyframes navlisfadein {
-    from {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0%);
     }
 }

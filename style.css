@@ -25,7 +25,7 @@ header {
     padding: 0px;
     width: 100%;
     justify-content: space-around;
-    background-color: #f2f2f2;
+    background-image: linear-gradient(-45deg, transparent, #f2f2f2);
     z-index: 1;
 }
 
@@ -298,6 +298,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: transparent;
 }
 
 .prodtitle {
@@ -366,15 +367,32 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #dfdfdf;
+    padding: 20px 0px;
 }
 
 footer .othernavs {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: flex-start;
+}
+
+.othernavs ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.othernavs li {
+    margin-top: 10px;
+}
+
+.othernavs li a {
+    color: #3d3d3d;
 }
 
 footer .cright {
+    margin: 70px 0px 0px 0px;
     color: #2e2e2e;
 }
 

@@ -85,7 +85,7 @@ function Scrolling() {
     //as soon as i start scrolling down, header should go up
     const yScroll = window.scrollY
     const scrHeight = document.querySelector('main').scrollHeight
-    console.log(scrHeight - yScroll);
+
     if (yScroll >= (scrHeight - yScroll)) {
         header.style.transform = 'translateY(-100%)'
         header.style.transition = 'transform 0.5s ease'

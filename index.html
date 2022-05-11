@@ -8,12 +8,13 @@
     <meta name="theme-color" content="#111111" />
     <meta name="description" content="
     We design and sew men and women's clothes, Fabric paintings, Shoes and bags and lots more" />
-    <link rel="apple-touch-icon" href="./favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="manifest" href="./manifest.json" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./stylemobile.css">
-
+    <link rel="apple-touch-icon" href="/static/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="stylesheet" href="/static/styles/main/style.css">
+    <link rel="stylesheet" href="/static/styles/main/stylemobile.css">
+    <link rel="stylesheet" href="/static/styles/webkit/scrollbar.css">
+    <link rel="stylesheet" href="/static/styles/components/product.css">
 
     <title>Maflah</title>
 </head>
@@ -23,15 +24,16 @@
 
     <header>
         <span class="title">
-            <img src="./logo_192.png" alt="logo" width="40px">
+            <img src="/static/imgs/logo_192.png" alt="logo" width="40px">
             <h3 class="titletext">Maflah</h3>
         </span>
 
         <nav class="navbar" id="navbar">
-            <li><a id="home" href="#">Home</a></li>
-            <li><a id="about" href="#">About Us</a></li>
-            <li><a id="shop" href="#">Shop</a></li>
+            <li><a id="home">Home</a></li>
+            <li><a id="about">About Us</a></li>
+            <li><a id="products">Shop</a></li>
         </nav>
+
         <!--
         <div class="searchbar" id="searchbar" name="searchbar">
             <svg id="searchbt" width="16px" height="16px">
@@ -47,13 +49,14 @@
         <span class="right-nav">
             <a class="login" href="# ">Login</a>
             <a class="signup" href="# ">Sign Up</a>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
         </span>
+
     </header>
 
     <main class="main">
@@ -72,7 +75,7 @@
                 </div>
 
                 <div class="homeimg">
-                    <img src="./imgs/logo_512.png" alt="logo">
+                    <img src="/static/imgs/logo_512.png" alt="logo">
                 </div>
             </div>
 
@@ -81,7 +84,7 @@
         <section class="about">
             <div class="abouthead">
                 <h2>
-                    Know About Us
+                    Get to Know Us
                 </h2>
             </div>
             <div class="aboutdescrip">
@@ -92,37 +95,60 @@
                 </div>
 
                 <div class="aboutimg">
-                    <img src="./imgs/jewel1.png" alt="logo">
+                    <img height="300px" src="/static/imgs/ash1.jpg" alt="ash">
+                    <img height="100px" src="/static/imgs/jewel1.png" alt="jewel">
+                    <img height="300px" src="/static/imgs/shadda1.jpg" alt="shad">
+                    <img height="60px" src="/static/imgs/boy1.jpg" alt="boy">
                 </div>
             </div>
             <div class="ball1"></div>
         </section>
 
         <section class="products">
+
             <div class="prodtitle">
-                <h2>Some of our work</h2>
+                <h2>Check out our Products</h2>
             </div>
 
-            <div class="prodscrollable" role="button">
-                <div draggable="false" class="product1"><img src="./imgs/blue1.jpg" alt=""></div>
-                <div draggable="false" class="product2"><img src="./imgs/yellow1.jpg" alt=""></div>
-                <div draggable="false" class="product3"><img src="./imgs/boy1.jpg" alt=""></div>
-                <div draggable="false" class="product4"><img src="./imgs/green1.jpg" alt=""></div>
-                <div draggable="false" class="product5"><img src="./imgs/shadda1.jpg" alt=""></div>
-                <div draggable="false" class="product6"><img src="./imgs/red1.jpg" alt=""></div>
-                <div draggable="false" class="product7"><img src="./imgs/yellow2.jpg" alt=""></div>
-                <div draggable="false" class="product8"><img src="./imgs/caftan2.jpg" alt=""></div>
+            <div class="prodscrollable">
+                <!---->
+                <template id="product-temp">
+                    <div class="product">
+
+                        <div id="prodimg">
+                            <img height="300px" width="150" src="" alt="">
+                        </div>
+                    
+                        <div id="proddetails">
+                    
+                            <span class="prodname">
+                                <h4>Product Name</h4>
+                            </span>
+                    
+                            <span class="prodprice">₦</span>
+                    
+                            <span class="proddescrip">
+                                I am the product description. Please make me short
+                            </span>
+                    
+                        </div>
+                    </div>
+                </template>
+                <!---->
+
             </div>
 
         </section>
 
         <section class="msg">
-            <h4>Maflah.com is currently under construction</h4>
-            <span>Be the first to know when its ready</span>
+            <div>
+                <h4>Maflah.com is currently under construction</h4>
+                <span>Be the first to know when its ready</span>
+            </div>
 
-            <form method="post" netlify>
+            <form method="post" class="form" netlify>
                 <input type="email" name="subscribe" class="subs" placeholder="Tell us your email">
-                <button class="submit" type="submit">Submit</button>
+                <input class="submit" type="submit"></input>
             </form>
 
         </section>
@@ -140,6 +166,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="contact">
                 <h3>Contact Us</h3>
                 <ul>
@@ -155,9 +182,12 @@
                 </ul>
             </div>
         </div>
-        <div class="cright">© Copyright 2022 by Maflah Dev</div>
+        <div class="cright">© 2022 Maflah Dev</div>
     </footer>
-    <script src="./js/app.js "></script>
+
+    <script src="/static/js/main/app.js"></script>
+    <script src="/static/js/main/form.js"></script>
+    <script type="module" src="/static/js/components/shop.js"></script>
 
 </body>
 

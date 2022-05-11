@@ -1,0 +1,466 @@
+/**/
+
+@media screen and (max-width: 800px) {
+    .navbar a {
+        font-size: 17px;
+    }
+    .navbar {
+        margin: 0px 0px;
+    }
+    .title .titletext {
+        font-size: 25px;
+    }
+    .title img {
+        margin: 0px 0px 0px 20px;
+    }
+    .right-nav * {
+        margin: 0px 3px;
+        font-size: 12px;
+    }
+    .signup {
+        padding: 5px;
+    }
+    section {
+        word-spacing: normal;
+    }
+    /*Home section*/
+    .home {
+        justify-content: center;
+    }
+    .homehead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .homehead h2 {
+        font-size: 200%;
+    }
+    .homedescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .hometxt {
+        display: flex;
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .hometxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .homeimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .home .homeimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .about {
+        justify-content: center;
+    }
+    .abouthead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abouthead h2 {
+        font-size: 200%;
+    }
+    .about .aboutdescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttxt {
+        display: flex;
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .abouttxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .about .aboutimg {
+        display: flex;
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        left: 0%;
+    }
+    .about .aboutimg img {
+        border-radius: 30px;
+        height: 350px;
+        max-width: 200px;
+        max-height: 200px;
+        animation: logofadein .7s forwards;
+    }
+    /*ash*/
+    .aboutimg img:nth-child(1) {
+        position: relative;
+        left: 10%;
+    }
+    /*jewel*/
+    .aboutimg img:nth-child(2) {
+        position: relative;
+        left: 45%;
+        bottom: 40px;
+        height: 40px;
+    }
+    /*shad*/
+    .aboutimg img:nth-child(3) {
+        position: relative;
+        right: 20%;
+        bottom: -20px;
+    }
+    /*boy*/
+    .about .aboutimg img:nth-child(4) {
+        position: relative;
+        bottom: -70px;
+        right: 30%;
+        height: 120px;
+    }
+    /*about section*/
+    .products {
+        justify-content: center;
+    }
+    .prodtitle {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .prodtitle h2 {
+        font-size: 200%;
+    }
+    .msg div {
+        font-size: 60%;
+    }
+    .msg form .subs {
+        width: 300px;
+    }
+}
+
+
+/*mobile 500px and below*/
+
+@media screen and (max-width: 500px) {
+    header {
+        background-color: #f2f2f2;
+    }
+    .navbar {
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        width: 60%;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-y: hidden;
+    }
+    .navbar li {
+        opacity: 0%;
+    }
+    .navbar a {
+        color: #222222;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .right-nav {
+        width: 40%;
+        justify-content: space-between;
+    }
+    section {
+        word-spacing: normal;
+    }
+    /*Home section*/
+    .home {
+        justify-content: center;
+    }
+    .homehead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .homehead h2 {
+        font-size: 200%;
+    }
+    .homedescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .hometxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .hometxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .homeimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .home .homeimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .about {
+        justify-content: center;
+    }
+    .abouthead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abouthead h2 {
+        font-size: 200%;
+    }
+    .about .aboutdescrip {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .abouttxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .abouttxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .about .aboutimg {
+        display: flex;
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        left: 0%;
+    }
+    .about .aboutimg img {
+        border-radius: 30px;
+        height: 350px;
+        max-width: 200px;
+        max-height: 200px;
+        animation: logofadein .7s forwards;
+    }
+    /*ash*/
+    .aboutimg img:nth-child(1) {
+        position: relative;
+        left: 20%;
+    }
+    /*jewel*/
+    .aboutimg img:nth-child(2) {
+        position: relative;
+        left: 45%;
+        bottom: 60px;
+        height: 50px;
+    }
+    /*shad*/
+    .aboutimg img:nth-child(3) {
+        position: relative;
+        right: 20%;
+        bottom: -20px;
+    }
+    /*boy1*/
+    .about .aboutimg img:nth-child(4) {
+        position: relative;
+        bottom: -70px;
+        right: 30%;
+        height: 150px;
+    }
+    /*about section*/
+    .products {
+        justify-content: center;
+    }
+    .prodtitle {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .prodtitle h2 {
+        font-size: 200%;
+    }
+    .msg div {
+        font-size: 60%;
+    }
+    .msg form .subs {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        background-color: #f2f2f2;
+    }
+    .navbar {
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        width: 60%;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-y: hidden;
+    }
+    .navbar li {
+        opacity: 0%;
+    }
+    .navbar a {
+        color: #222222;
+        font-weight: 200;
+        font-size: 14px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .right-nav {
+        width: 40%;
+        justify-content: space-between;
+    }
+    section {
+        word-spacing: normal;
+    }
+    /*Home section*/
+    .home {
+        justify-content: center;
+    }
+    .homehead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .homehead h2 {
+        font-size: 200%;
+    }
+    .homedescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .hometxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .hometxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .homeimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .home .homeimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .about {
+        justify-content: center;
+    }
+    .abouthead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abouthead h2 {
+        font-size: 200%;
+    }
+    .about .aboutdescrip {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .abouttxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .abouttxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .about .aboutimg {
+        display: flex;
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        left: 0%;
+    }
+    .about .aboutimg img {
+        border-radius: 30px;
+        height: 350px;
+        max-width: 120px;
+        max-height: 120px;
+        animation: logofadein .7s forwards;
+    }
+    /*ash*/
+    .aboutimg img:nth-child(1) {
+        position: relative;
+        left: 20%;
+    }
+    /*jewel*/
+    .aboutimg img:nth-child(2) {
+        position: relative;
+        left: 45%;
+        bottom: 60px;
+        height: 50px;
+    }
+    /*shad*/
+    .aboutimg img:nth-child(3) {
+        position: relative;
+        right: 10%;
+        bottom: -20px;
+    }
+    /*boy1*/
+    .about .aboutimg img:nth-child(4) {
+        position: relative;
+        bottom: -30px;
+        right: 15%;
+        height: 110px;
+    }
+    /*about section*/
+    .products {
+        justify-content: center;
+    }
+    .prodtitle {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .prodtitle h2 {
+        font-size: 200%;
+    }
+    .msg div {
+        font-size: 60%;
+    }
+    .msg form .subs {
+        width: 300px;
+    }
+}
+
+
+/*(HEADER's NAVBAR) for toggling nav bar visibilty*/
+
+.nav-active {
+    transform: translateX(0%);
+}

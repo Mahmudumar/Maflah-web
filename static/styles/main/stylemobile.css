@@ -139,6 +139,12 @@
     .msg form .subs {
         width: 300px;
     }
+    .ball1 {
+        display: none;
+    }
+    .ball2 {
+        display: none;
+    }
 }
 
 
@@ -298,6 +304,12 @@
     }
     .msg form .subs {
         width: 300px;
+    }
+    .ball1 {
+        display: none;
+    }
+    .ball2 {
+        display: none;
     }
 }
 

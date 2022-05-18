@@ -198,6 +198,7 @@ section h2 {
     width: 300px;
     animation: rotatelogo 3s ease;
     border-radius: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .home .hometxt {
@@ -470,4 +471,26 @@ img {
     to {
         transform: rotateY(360deg);
     }
+}
+
+.ball1 {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-color: #3f82ce;
+    border-radius: 50%;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+.ball2 {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-color: #4bce3f;
+    border-radius: 50%;
+    position: relative;
+    top: 240px;
+    left: -10px;
 }

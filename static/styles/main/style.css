@@ -305,6 +305,15 @@ section h2 {
 
 /*Products are in products.css*/
 
+.products {
+    --product-img-height: 300px;
+    --product-img-width: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(#7cdf5e, #3a6bb6);
+}
+
 
 /*construction msg*/
 

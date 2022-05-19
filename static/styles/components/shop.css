@@ -1,0 +1,12 @@
+.products .prodscrollable {
+    display: flex;
+    max-width: 90%;
+    width: 100vw;
+    max-height: fit-content;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #0000ff;
+    scroll-behavior: smooth;
+    scrollbar-gutter: auto;
+    white-space: nowrap;
+}

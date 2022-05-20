@@ -62,7 +62,14 @@
     overflow-y: auto;
 }
 
-#proddetails span p {
+#proddetails .prodprice {
+    content: '';
+    color: #ff3300;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+#proddetails .proddescrip {
     max-height: 60px;
     word-wrap: normal;
     overflow: hidden;

@@ -1,7 +1,7 @@
 {
     "short_name": "Maflah",
     "name": "Maflah",
-    "description": "We design and sew men and women's clothes, Fabric paintings, Shoes and Bags and lots more.",
+    "description": "Fabric paintings, Shoes, Bags and lots more.",
     "icons": [{
             "src": "favicon.svg",
             "sizes": "514x514",
@@ -19,7 +19,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": ".",
+    "start_url": "/",
     "id": "/",
     "display": "standalone",
     "orientation": "portrait",

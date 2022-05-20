@@ -1,4 +1,4 @@
-console.log("Cookies: " + navigator.cookieEnabled);
+/*console.log("Cookies: " + navigator.cookieEnabled);
 console.log("Browser Language: " + navigator.browserLanguage);
 console.log("Language: " + navigator.language);
 console.log("Platform: " + navigator.platform);
@@ -8,4 +8,12 @@ console.log("Webdriver: " + navigator.webdriver);
 console.log("Geolocation: " + navigator.geolocation);
 
 sessionStorage.setItem(`name`, `bo`)
-console.log(sessionStorage.getItem('name'), navigator)
+console.log(sessionStorage.getItem('name'), navigator)*/
+
+const Crypto = require('crypto')
+
+function encrypt(input) {
+    return Crypto.createHash('sha256').update(input).digest('hex')
+}
+pass = 'hi there'
+console.log(encrypt(pass))

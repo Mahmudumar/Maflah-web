@@ -87,7 +87,8 @@
         max-width: 300px;
         max-height: 300px;
         position: relative;
-        left: 0%;
+        left: 2%;
+        bottom: 20px;
     }
     .about .aboutimg img {
         border-radius: 30px;
@@ -105,7 +106,7 @@
     .aboutimg img:nth-child(2) {
         position: relative;
         left: 45%;
-        bottom: 40px;
+        bottom: 50px;
         height: 40px;
     }
     /*shad*/
@@ -119,7 +120,7 @@
         position: relative;
         bottom: -70px;
         right: 30%;
-        height: 120px;
+        height: 100px;
     }
     .products {
         justify-content: center;
@@ -244,7 +245,7 @@
         width: 70%;
     }
     .abouttxt p {
-        font-size: 70%;
+        font-size: 60%;
         text-align: center;
     }
     .about .aboutimg {
@@ -252,7 +253,8 @@
         max-width: 300px;
         max-height: 300px;
         position: relative;
-        left: 0%;
+        left: 2%;
+        bottom: 20px;
     }
     .about .aboutimg img {
         border-radius: 30px;
@@ -264,29 +266,30 @@
     /*ash*/
     .aboutimg img:nth-child(1) {
         position: relative;
-        left: 20%;
+        left: 10%;
     }
     /*jewel*/
     .aboutimg img:nth-child(2) {
         position: relative;
         left: 45%;
-        bottom: 60px;
-        height: 50px;
+        bottom: 50px;
+        height: 40px;
     }
     /*shad*/
     .aboutimg img:nth-child(3) {
         position: relative;
         right: 20%;
         bottom: -20px;
+        height: 180px;
     }
-    /*boy1*/
+    /*boy*/
     .about .aboutimg img:nth-child(4) {
         position: relative;
         bottom: -70px;
         right: 30%;
-        height: 150px;
+        height: 90px;
+        border-radius: 12px;
     }
-    /*about section*/
     .products {
         justify-content: center;
     }
@@ -407,7 +410,7 @@
         width: 70%;
     }
     .abouttxt p {
-        font-size: 70%;
+        font-size: 50%;
         text-align: center;
     }
     .about .aboutimg {
@@ -415,41 +418,41 @@
         max-width: 300px;
         max-height: 300px;
         position: relative;
-        left: 0%;
+        left: 2%;
+        bottom: 20px;
     }
     .about .aboutimg img {
         border-radius: 30px;
         height: 350px;
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 80px;
+        max-height: 80px;
         animation: logofadein .7s forwards;
     }
     /*ash*/
     .aboutimg img:nth-child(1) {
         position: relative;
-        left: 20%;
+        left: 10%;
     }
     /*jewel*/
     .aboutimg img:nth-child(2) {
         position: relative;
         left: 45%;
-        bottom: 60px;
-        height: 50px;
+        bottom: 50px;
+        height: 40px;
     }
     /*shad*/
     .aboutimg img:nth-child(3) {
         position: relative;
-        right: 10%;
+        right: 20%;
         bottom: -20px;
     }
-    /*boy1*/
+    /*boy*/
     .about .aboutimg img:nth-child(4) {
         position: relative;
-        bottom: -30px;
-        right: 15%;
-        height: 110px;
+        bottom: -10px;
+        right: 30%;
+        height: 100px;
     }
-    /*about section*/
     .products {
         justify-content: center;
     }

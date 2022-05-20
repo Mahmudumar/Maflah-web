@@ -22,8 +22,9 @@
     min-height: fit-content;
     height: min-content;
     height: 420px;
-    background-color: #4989b4fd;
+    background-color: transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 

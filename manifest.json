@@ -1,7 +1,7 @@
 {
     "short_name": "Maflah",
-    "name": "Maflah Shopping Center",
-    "description": "We design and sew men and women's clothes, Fabric paintings, Shoes and bags and lots more",
+    "name": "Maflah",
+    "description": "We design and sew men and women's clothes, Fabric paintings, Shoes and Bags and lots more.",
     "icons": [{
             "src": "favicon.svg",
             "sizes": "514x514",
@@ -17,9 +17,7 @@
             "src": "logo_192.png",
             "sizes": "192x192",
             "type": "image/png"
-
         }
-
     ],
     "start_url": ".",
     "id": "/",

@@ -30,8 +30,13 @@ const clickLinks = (toggle_ = true) => {
             const id = a.getAttribute('id')
                 //when clicked scrolls into view
             const sections = document.querySelector(`.${id}`)
+
+
             a.addEventListener('click', () => {
                 sections.scrollIntoView({ 'behavior': 'smooth' })
+                var scrollNo = body.scrollTop
+                sections.scrollTo({ 'behavior': 'smooth', 'top': scrollNo + -90 })
+                console.log(scrollNo);
                 if (toggle_) {
                     toggle()
                 } else {

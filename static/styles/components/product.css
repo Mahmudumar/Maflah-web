@@ -63,8 +63,7 @@
 }
 
 #proddetails .prodprice {
-    content: '';
-    color: #ff3300;
+    color: #ff7300;
     font-weight: 700;
     font-size: 100%;
 }

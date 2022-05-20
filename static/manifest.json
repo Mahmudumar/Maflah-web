@@ -20,7 +20,7 @@
 
         }
     ],
-    "start_url": ".",
+    "start_url": "/",
     "id": "/",
     "display": "standalone",
     "orientation": "portrait",

@@ -1,10 +1,5 @@
 /*products*/
 
-.products {
-    --product-img-height: 300px;
-    --product-img-width: 150px;
-}
-
 .prodtitle {
     text-align: center;
     color: #f2f2f2;

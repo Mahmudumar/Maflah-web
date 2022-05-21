@@ -1,12 +1,24 @@
-.products .prodscrollable {
-    display: flex;
-    max-width: 90%;
-    width: 100vw;
-    max-height: fit-content;
+.products .shop {
+    /*don't add display:flex here cos it proves to be problematic*/
+    max-width: 100%;
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: transparent;
-    scroll-behavior: smooth;
-    scrollbar-gutter: auto;
-    white-space: nowrap;
+    max-height: 100vh;
+    --product-img-height: 230px;
+    /*product image width is half of image height */
+    --product-img-width: calc(var(--product-img-height) / 2);
+}
+
+.shop .innerdiv {
+    display: flex;
+    height: fit-content;
+    width: max-content;
+}
+
+.shop .innerdiv .product {
+    width: fit-content;
+    margin: 10px;
+    float: left;
+    display: flex;
 }

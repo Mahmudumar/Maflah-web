@@ -17,13 +17,14 @@
 
 
          this.prodname = this.product.querySelector('.prodname');
-         var prodimg = this.product.querySelector('#prodimg img');
+         this.prodimg = this.product.querySelector('#prodimg img');
+         var proddetails_card = this.product.querySelector('.proddetails')
          var prodprice = this.product.querySelector('.prodprice');
          var proddescrip = this.product.querySelector('.proddescrip');
 
 
          // set values for products
-         prodimg.setAttribute('src', this.pImg);
+         this.prodimg.setAttribute('src', this.pImg);
          this.prodname.textContent = this.pName + '';
          prodprice.textContent += this.pPrice;
          proddescrip.textContent = this.pDescrip;

@@ -30,6 +30,8 @@
     height: var(--product-img-height);
     width: var(--product-img-width);
     border-radius: 20px;
+    transform: translateY(1%);
+    transition: all 0.5s ease;
 }
 
 
@@ -53,14 +55,16 @@
 
 #proddetails .prodname {
     font-family: sans-serif;
-    font-weight: 700;
+    font-size: 92%;
+    font-weight: 600;
     overflow-y: auto;
+    max-width: 140px;
 }
 
 #proddetails .prodprice {
     color: #ff7300;
     font-weight: 700;
-    font-size: 100%;
+    font-size: 97%;
 }
 
 #proddetails .proddescrip {

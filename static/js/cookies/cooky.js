@@ -58,7 +58,8 @@ function compareCookie(a, b) {
 //      then run this function (alert that it already has been submitted)
 // else, 
 //      overwrite the existing email address in the cookies
-email.addEventListener('focusout', () => {
+
+email.addEventListener('blur', () => {
     if (compareCookie(email.value, getCookie('email'))) {
         window.alert("Thank you!, We already have your email.")
     } else {

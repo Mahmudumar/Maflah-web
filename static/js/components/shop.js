@@ -30,7 +30,12 @@ if ('content' in document.createElement('template')) {
     const prod4 = new Product("Yellow Gown", "14,000", '/static/imgs/yellow1.jpg', 'ygown1');
     const prod5 = new Product("Yellow Gown", "14,000", '/static/imgs/yellow2.jpg', 'ygown2');
     const prod6 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
-    clotheshop.add(prod, prod1, prod2, prod3, prod4, prod5, prod6)
+    const prod7 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
+    const prod8 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
+    const prod9 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
+    const prod10 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
+    const prod11 = new Product("Shadda Gown", "14,000", '/static/imgs/shadda1.jpg', 'shad1');
+    clotheshop.add(prod, prod1, prod2, prod3, prod4, prod5, prod6, prod7)
 
 } else {
     // Find another way to add the rows to the table because

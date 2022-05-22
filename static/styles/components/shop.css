@@ -1,12 +1,12 @@
 .products .shop {
     /*don't add display:flex here cos it proves to be problematic*/
-    max-width: 100%;
-    width: 100%;
+    max-width: 85%;
+    width: 85%;
     overflow-x: auto;
     overflow-y: hidden;
     max-height: 100vh;
     --product-img-height: 230px;
-    /*product image width is half of image height */
+    /*product image width is half of image heightas */
     --product-img-width: calc(var(--product-img-height) / 2);
 }
 

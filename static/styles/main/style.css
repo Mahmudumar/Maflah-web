@@ -31,7 +31,7 @@ header {
 }
 
 main {
-    margin-top: 90px;
+    margin: calc(var(--header-height) + 20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +187,7 @@ section h2 {
 .home .homedescrip {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
 }
 
 .homehead {
@@ -226,7 +226,7 @@ section h2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
 }
 
 .abouthead {
@@ -240,7 +240,7 @@ section h2 {
     max-width: 300px;
     max-height: 300px;
     position: relative;
-    left: 10%;
+    left: 5%;
 }
 
 .about .aboutimg img {

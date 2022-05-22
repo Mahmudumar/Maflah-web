@@ -31,23 +31,16 @@ const clickLinks = (toggle_ = true) => {
                 //when clicked scrolls into view
             const sections = document.querySelector(`.${id}`)
 
-
             a.addEventListener('click', () => {
                 sections.scrollIntoView({ 'behavior': 'smooth' })
-                var scrollNo = body.scrollTop
-                sections.scrollTo({ 'behavior': 'smooth', 'top': scrollNo + -90 })
-                console.log(scrollNo);
+
                 if (toggle_) {
                     toggle()
-                } else {
-
-                }
-
+                } else {}
             })
         })
     } //toggle nav
-burger.addEventListener('click', toggle)
-clickLinks(false)
+
 
 
 const sizeBody = () => {
@@ -69,11 +62,6 @@ function Scrolling() {
 
 };
 
-window.addEventListener('load', sizeBody);
-window.addEventListener('resize', sizeBody);
-
-window.addEventListener('load', setMinHeight);
-window.addEventListener('resize', setMinHeight);
 
 
 //like listening for media queries
@@ -89,12 +77,17 @@ const media = () => {
 
     }
 }
-window.addEventListener('resize', media)
-window.addEventListener('load', media)
+
 
 // app functions all together
 const app = () => {
-
-
+    window.addEventListener('load', sizeBody);
+    window.addEventListener('resize', sizeBody);
+    window.addEventListener('resize', media)
+    window.addEventListener('load', media)
+    window.addEventListener('load', setMinHeight);
+    window.addEventListener('resize', setMinHeight);
+    burger.addEventListener('click', toggle);
+    clickLinks(false)
 };
 app();

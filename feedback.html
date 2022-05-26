@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/feedback/feedback.css">
+    <title>Feedback - Maflah</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="logo"></div>
+        <div class="title1">
+            <h1>How are we doing?</h1>
+            <h5>Have a suggestion or a compliment?</h5>
+            <h5>We would love to hear it</h5>
+        </div>
+
+        <div class="feed">
+            <form name="feedback" method="post" netlify>
+                <div class="inputarea">
+                    <span>Name</span>
+                    <input class="name" type="text" name="name" placeholder="Tell us your name">
+                </div>
+                <div class="emailarea">
+                    <span>Email</span>
+                    <input class="email" type="email" name="email" placeholder="Tell us your email">
+                </div>
+                <div class="category">
+                    <label for="category">Feedback category</label>
+                    <select name="category" id="category">
+                        <option value="suggestion">Suggestion</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+                <div class="messagearea">
+                    <span>Message</span>
+                    <textarea class="feedbacktxt" name="message" placeholder="What would you like to say"></textarea>
+                </div>
+                <div class="btns">
+                    <button class="submit" type="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>

@@ -30,7 +30,9 @@
                     <input class="email" type="email" name="email" placeholder="Tell us your email">
                 </div>
                 <div class="category">
+
                     <label for="category">Feedback category</label>
+                    <input type="hidden" name="category">
                     <select name="category" id="category">
                         <option value="suggestion">Suggestion</option>
                         <option value="compliment">Compliment</option>
@@ -42,7 +44,13 @@
                     <textarea class="feedbacktxt" name="message" placeholder="What would you like to say"></textarea>
                 </div>
                 <div class="btns">
-                    <button class="submit" type="submit">Submit</button></div>
+                    <span class="right">
+                        <button class="submit" type="submit">Submit</button>
+                    </span>
+                    <span class="left">
+                        <a  href="index.html" class="cancel">Cancel</a>
+                    </span>
+                </div>
             </form>
         </div>
     </div>

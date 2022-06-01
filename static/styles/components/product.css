@@ -78,3 +78,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media screen and (max-width:500px) {
+    .product img {
+        height: calc( var(--product-img-height) - 40px);
+        width: calc( var(--product-img-width) - 20px);
+    }
+    .product #proddetails {
+        width: calc( var(--product-img-width) - 20px);
+    }
+}

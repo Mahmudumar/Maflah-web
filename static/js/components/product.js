@@ -26,7 +26,7 @@
          // set values for products
          this.prodimg.setAttribute('src', this.pImg);
          this.prodname.textContent = this.pName + '';
-         prodprice.textContent += this.pPrice;
+         prodprice.textContent = "₦" + this.pPrice;
          proddescrip.textContent = this.pDescrip;
          return (this.product)
      }

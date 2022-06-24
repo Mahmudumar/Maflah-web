@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#111111" />
     <meta name="description" content=" 
     We design and sew men and women's clothes, Fabric paintings, Shoes and bags and lots more" />
-    <meta name="keywords" content="Fashion, Jewels, Ready-made clothing, Caftan">
+    <meta name="keywords" content="Fashion ">
     <link rel="apple-touch-icon" href="favicon.svg" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="manifest" href="./manifest.json" />
@@ -17,11 +17,10 @@
     <link rel="stylesheet" href="/static/styles/webkit/scrollbar.css">
     <link rel="stylesheet" href="/static/styles/components/product.css">
     <link rel="stylesheet" href="/static/styles/components/shop.css">
-    <title>Maflah</title>
+    <title>Maflah - Online Shopping Mall</title>
 </head>
 
 <body>
-    <meta itemscope itemtype="https://schema.org/WebSite">
     <header>
         <span class="title">
             <img src="/static/imgs/logo_192.png" alt="logo" width="40px">
@@ -29,9 +28,9 @@
         </span>
 
         <nav class="navbar" id="navbar">
-            <li title="Home"><a id="home">Home</a></li>
-            <li title="About"><a id="about">About Us</a></li>
-            <li title="Shop"><a id="products">Shop</a></li>
+            <li><a id="home">Home</a></li>
+            <li><a id="about">About Us</a></li>
+            <li><a id="products">Shop</a></li>
         </nav>
 
         <!--
@@ -47,8 +46,8 @@
         </div>
         -->
         <span class="right-nav">
-            <a class="login" href="# ">Login</a>
-            <a class="signup" href="# ">Sign Up</a>
+            <!--<a class="login" href="# ">Login</a>
+            <a class="signup" href="# ">Sign Up</a>-->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -81,15 +80,15 @@
             </div>
         </section>
 
-        <section itemscope itemtype="https://schema.org/Article" class="about">
-            <div itemprop="name" class="abouthead">
+        <section class="about">
+            <div class="abouthead">
                 <h2>
                     Get to Know Us
                 </h2>
             </div>
             <div class="aboutdescrip">
                 <div class="abouttxt">
-                    <p itemprop="text">
+                    <p>
                         Maflah has been around since 2012 selling fashion products and sewing clothing for its customers.
                     </p>
                 </div>
@@ -115,21 +114,21 @@
 
                     <!---->
                     <template id="product-temp">
-                        <div itemscope itemtype="https://schema.org/Product" class="product">
+                        <div class="product">
 
                             <div id="prodimg" height="300px" width="150">
-                                <img itemprop="image" src="" alt="">
+                                <img  src="" alt="">
                             </div>
                         
-                            <div itemscope itemprop="offers" itemscope="https://schema.org/Offer" id="proddetails">
+                            <div id="proddetails">
                         
                                 <span class="prodname">
-                                    <h4 itemprop="name">Product Name</h4>
+                                    <h4>Product Name</h4>
                                 </span>
                         
-                                <span itemprop="price" content="NGN" class="prodprice">₦</span>
+                                <span class="prodprice">₦</span>
                         
-                                <span itemprop="description" class="proddescrip">
+                                <span class="proddescrip">
                                     I am the product description. Please make me short
                                 </span>
                         
@@ -173,7 +172,7 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li>
-                        <a itemprop="url" href="feedback.html">
+                        <a href="feedback.html">
                             Give Feedback
                         </a>
                     </li>

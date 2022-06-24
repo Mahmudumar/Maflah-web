@@ -162,8 +162,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 500px;
-        width: 60%;
+        height: 100vh;
+        width: 100%;
         margin: 0px;
         padding: 0px 0px 0px 0px;
         transform: translateX(100%);

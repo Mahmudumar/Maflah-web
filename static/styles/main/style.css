@@ -48,7 +48,7 @@ main {
 }
 
 .title .logo {
-    --logo-size: 100px;
+    --logo-size: 110px;
     width: var(--logo-size);
     height: var(--logo-size);
     border-radius: 100%;

@@ -29,12 +29,11 @@ header {
     padding: 0px;
     width: 100%;
     justify-content: space-around;
-    background-image: linear-gradient(-45deg, transparent, #f2f2f2);
+    background-color: transparent;
     z-index: 1;
 }
 
 main {
-    margin: calc(var(--header-height) + 20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,10 +47,14 @@ main {
     display: flex;
 }
 
-.title img {
-    border-radius: 20px;
+.title .logo {
+    --logo-size: 100px;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border-radius: 100%;
     margin: 0px 20px 0px 0px;
-    background-color: #f2f2f2;
+    background-color: transparent;
+    filter: brightness(500%);
 }
 
 .title .titletext {
@@ -59,7 +62,7 @@ main {
     width: fit-content;
     height: 40px;
     padding: 5px;
-    color: #202020;
+    color: #f2f2f2;
     /*font of title*/
     font-size: 35px;
     font-family: serif;
@@ -76,7 +79,7 @@ main {
 }
 
 .navbar a {
-    color: #2e2e2e;
+    color: #f2f2f2;
     font-size: 18px;
     font-family: sans-serif;
     pointer-events: all;
@@ -168,9 +171,8 @@ outline: none;
 section {
     display: flex;
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh);
     min-height: fit-content;
-    margin-top: 2px;
     background-color: #f2f2f2;
 }
 
@@ -186,7 +188,21 @@ section h2 {
 .home {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: #111111c5;
+}
+
+.home .bg {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.home-sepblock {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding-bottom: calc(var(--header-height) + 100px);
 }
 
 .home .homedescrip {
@@ -197,6 +213,7 @@ section h2 {
 
 .homehead {
     text-align: center;
+    color: #f2f2f2;
 }
 
 .home .homeimg img {
@@ -217,6 +234,7 @@ section h2 {
     margin: 25px 0px;
     max-width: 600px;
     line-height: 36pt;
+    color: #f2f2f2;
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
@@ -224,6 +242,12 @@ section h2 {
 .about {
     display: flex;
     flex-direction: column;
+}
+
+.about-sepblock {
+    display: flex;
+    width: 100%;
+    height: 120px;
 }
 
 .about .aboutdescrip {
@@ -315,6 +339,12 @@ section h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.products-sepblock {
+    display: flex;
+    width: 100%;
+    height: 120px;
 }
 
 

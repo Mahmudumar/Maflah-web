@@ -6,7 +6,7 @@
     overflow-y: hidden;
     max-height: 100vh;
     --product-img-height: 230px;
-    /*product image width is half of image heightas */
+    /*product image width is half of image heights */
     --product-img-width: calc(var(--product-img-height) / 2);
 }
 
@@ -21,4 +21,14 @@
     margin: 10px;
     float: left;
     display: flex;
+}
+
+.shopScrollable {
+    height: fit-content;
+    width: max-content;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }

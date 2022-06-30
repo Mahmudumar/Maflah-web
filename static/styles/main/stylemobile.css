@@ -151,9 +151,6 @@
 /*mobile 500px and below*/
 
 @media screen and (max-width: 500px) {
-    header {
-        background-color: #f2f2f2;
-    }
     .navbar {
         position: absolute;
         top: 0px;
@@ -182,6 +179,9 @@
         display: block;
         cursor: pointer;
         pointer-events: all;
+    }
+    .burger div {
+        background-color: #f2f2f2;
     }
     .right-nav {
         width: 40%;

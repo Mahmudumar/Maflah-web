@@ -12,6 +12,7 @@ const titletext = document.querySelector('.titletext')
 const homehead = document.querySelector('div.homehead')
 const main = document.querySelector('main')
 const logo = document.querySelector('.logo')
+const mobileWidth = 500
 
 function setMinHeight() {
     const headerHeight = header.clientHeight
@@ -34,7 +35,19 @@ const toggle = () => {
             link.style.animation = `navlisfadein 0.5s ease forwards ${index / 10 + .09}s`
         }
     });
+
+    if (on) {
+        burgerdivs.forEach((a) => {
+            a.style.backgroundColor = '#2e2e2e'
+        })
+    } else {
+        burgerdivs.forEach((a) => {
+            a.style.backgroundColor = ''
+        })
+    }
+
     burger.classList.toggle('toggle');
+
     return on;
 }
 
@@ -47,8 +60,10 @@ const clickLinks = (toggle_ = true) => {
                 sections.scrollIntoView({ 'behavior': 'smooth' })
 
                 if (toggle_) {
-                    toggle()
-                } else {}
+                    if (window.innerWidth <= mobileWidth) {
+                        toggle()
+                    }
+                }
             })
         })
     } //toggle nav
@@ -102,14 +117,9 @@ function Scrolling() {
 
 
 const media = () => {
-
-
-
-    clickLinks(true)
-
+    clickLinks(true);
     window.addEventListener('scroll', Scrolling);
     window.addEventListener('load', Scrolling);
-
 }
 
 // app functions all together
@@ -121,7 +131,10 @@ const app = () => {
     window.addEventListener('load', media)
     window.addEventListener('load', setMinHeight);
     window.addEventListener('resize', setMinHeight);
+
     burger.addEventListener('click', toggle);
+
     clickLinks(false)
 };
+
 app();

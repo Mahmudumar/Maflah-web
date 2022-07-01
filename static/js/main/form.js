@@ -13,7 +13,6 @@ function checkemail() {
         } else {
             submit.removeAttribute('disabled')
         }
-
     }
 }
 

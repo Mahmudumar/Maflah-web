@@ -167,6 +167,9 @@
         transition: transform 0.3s ease;
         overflow-y: hidden;
     }
+    .title .logo {
+        --logo-size: 80px;
+    }
     .navbar li {
         opacity: 0%;
     }
@@ -184,6 +187,7 @@
         background-color: #f2f2f2;
     }
     .right-nav {
+        display: flex;
         width: 40%;
         justify-content: right;
     }
@@ -317,9 +321,6 @@
 }
 
 @media screen and (max-width: 300px) {
-    header {
-        background-color: #f2f2f2;
-    }
     .navbar {
         position: absolute;
         top: 0px;
@@ -335,6 +336,9 @@
         transform: translateX(100%);
         transition: transform 0.3s ease;
         overflow-y: hidden;
+    }
+    .title .logo {
+        --logo-size: 60px;
     }
     .navbar li {
         opacity: 0%;

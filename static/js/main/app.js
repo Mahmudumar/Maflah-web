@@ -101,7 +101,7 @@ function Scrolling() {
 
     } else { //if on the top
         titletext.style.color = ''
-        header.style.backgroundColor = ''
+        header.style.backgroundColor = 'transparent'
         header.style.boxShadow = ''
         logo.style.filter = 'brightness(500%)'
         navlias.forEach((a) => { a.style.color = '' })
